@@ -56,6 +56,5 @@ Livro criarLivro(int codigo, char titulo[100], char autor[100], char genero[50],
     novoLivro -> editora[100] = editora;
     novoLivro -> nPaginas = nPaginas;
 
-    inserir(&raiz, livro.codigo);
+    inserir_livro(&raiz, livro.codigo);
 }
-

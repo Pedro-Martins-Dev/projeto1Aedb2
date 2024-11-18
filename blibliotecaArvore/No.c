@@ -29,7 +29,7 @@ No* criarNo(int *valor)
     return novoNo;
 }
 
-No* inserir(No* raiz, int valor) 
+No* inserir_livro(No* raiz, int valor) 
 {
     if (raiz == NULL) 
     {
@@ -72,7 +72,8 @@ No* buscar(No* raiz, int valor)
 
 No* encontrar_minimo(No* raiz) 
 {
-    while (raiz && raiz->esq != NULL) {
+    while (raiz && raiz->esq != NULL) 
+    {
         raiz = raiz->esq;
     }
     return raiz;
